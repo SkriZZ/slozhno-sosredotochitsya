@@ -2,4 +2,223 @@
 
 .page {
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
+  position: relative;
+  padding: 0px 10px;
+  background-color: var(--background-color);
+  font-family: var(--font-family), sans-serif;
+  background-image: var(--background-image);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+}
+
+@media (width >= 768px) {
+.page {
+  padding: 0px 20px;
+}
+}
+
+.header {
+  position: relative;
+  padding-block-end: 66px;
+}
+.header_rec {
+  position: absolute;
+  text-transform: uppercase;
+  color: var(--color-rec);
+  font-size: 18px;
+  line-height: 25px;
+  text-align: center;
+  display: flex;
+  gap: 10px;
+  right: 9px;
+  top: 10px;
+}
+
+@media (width >= 768px) {
+  .header_rec {
+  right: 9px;
+  top: 20px;
+  }
+}
+
+.header_rec::after {
+  content: '';
+  display: block;
+  inline-size: 10px;
+  block-size: 10px;
+  background-color: var(--color-rec);
+  border-radius: 50%;
+  box-shadow: 0 0 4px 2px var(--color-rec);
+  align-self: center;
+}
+
+.decorated-zone::before {
+  content: "";
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  border-left: 1px solid var(--corners-color);
+  border-bottom: 1px solid var(--corners-color);
+  left: 0px;
+  bottom: 10px;
+}
+
+@media (width >= 768px) {
+  .decorated-zone::before {
+    left: 0px;
+    bottom: 20px;
+  }
+}
+
+.decorated-zone::after {
+  content: "";
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  border-right: 1px solid var(--corners-color);
+  border-top: 1px solid var(--corners-color);
+  right: 0px;
+  top: 10px;
+}
+
+@media (width >= 768px) {
+  .decorated-zone::after {
+    right: 0px;
+    top: 20px;
+  }
+}
+
+.header__theme-menu {
+  padding-block-start: 75px;
+}
+
+.header__theme-menu-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: end;
+}
+
+.header__theme-menu-button {
+  color: var(--corners-color);
+  background-color: transparent;
+  border: transparent;
+  font-family: inherit;
+  text-transform: lowercase;
+  font-size: 18px;
+  padding: 0px 13px;
+  text-align: center;
+  line-height: 100%;
+  inline-size: 70px;
+  block-size: 26px;
+  
+}
+
+@media (width >= 768px) {
+  .header__theme-menu {
+    padding-block-start: 192px;
+  }
+}
+
+@media (width >= 1024px) {
+  .header__theme-menu-list {
+    flex-direction: row;
+    justify-content: center;
+  }
+    .header__theme-menu {
+      padding-block-start: 20px;
+    }
+}
+
+.header__theme-menu-button:hover {
+  border: var(--hover-color);
+}
+
+.header__theme-menu-button:focus {
+  outline: none;
+}
+
+.header__theme-menu-button:focus-visible {
+  border-bottom: 1px solid var(--corners-color);
+}
+
+.header__theme-menu-button_active {
+  border: 1px solid var(--corners-color);
+}
+
+.header-title {
+  color: var(--h1-color);
+  font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  text-shadow: 4px 4px 0 var(--text-shadow);
+  line-height: 82%;
+  margin-block-start: 65px;
+  margin-block-end: 55px;
+}
+
+@media (width >= 768px) {
+  .header-title {
+    margin-block-start: 173px;
+    margin-block-end: 162px;
+    font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem) ;
+    margin-inline-start: -20px;
+  }
+}
+
+@media (width >= 1024px) {
+  .header-title {
+    margin-block-start: 273px;
+    margin-block-end: 114px;
+    font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem) ;
+  }
+}
+
+.title-decore {
+  background-color: var(--title-decore) ;
+  color: var(--title-decore-text);
+}
+
+.header-text {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 23.4px;
+  text-align: left;
+  max-inline-size: 364px;
+  margin-inline-start: auto;
+}
+
+@media (width >= 768px) {
+  .header {
+    padding-block-end: 183px;
+  }
+}
+
+@media (width >= 1024px) {
+  .header-text {
+    max-inline-size: 491px;
+  }
+  .header {
+    padding-block-end: 134px;
+  }
+}
+
+.main {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+
+@media (width >= 768px) {
+  .main {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+
+  h2 {
+    inline-size: 33vw;
+  }
+}
+.section {
+  display: flex;
 }
