@@ -23,6 +23,8 @@
   position: relative;
   padding-block-end: 66px;
   margin-block-end: 40px;
+  block-size: 100%;
+  inline-size: 100%;
 }
 
 @media (width >= 768px) {
@@ -228,7 +230,6 @@
   line-height: 23.4px;
   text-align: left;
   color: var(--color-main-title);
-  font-size: 18px;
   margin-block-end: 20px;
 }
 
