@@ -14,9 +14,9 @@
 }
 
 @media (width >= 768px) {
-.page {
-  padding: 0px 20px;
-}
+  .page {
+    padding: 0px 20px;
+  }
 }
 
 .header {
@@ -29,7 +29,7 @@
   .header {
     margin-block-end: 60px;
   }
-  }
+}
 
 .header_rec {
   position: absolute;
@@ -46,13 +46,13 @@
 
 @media (width >= 768px) {
   .header_rec {
-  right: 9px;
-  top: 20px;
+    right: 9px;
+    top: 20px;
   }
 }
 
 .header_rec::after {
-  content: '';
+  content: "";
   display: block;
   inline-size: 10px;
   block-size: 10px;
@@ -121,7 +121,6 @@
   line-height: 100%;
   inline-size: 70px;
   block-size: 26px;
-  
 }
 
 @media (width >= 768px) {
@@ -135,9 +134,9 @@
     flex-direction: row;
     justify-content: center;
   }
-    .header__theme-menu {
-      padding-block-start: 20px;
-    }
+  .header__theme-menu {
+    padding-block-start: 20px;
+  }
 }
 
 .header__theme-menu-button:hover {
@@ -169,7 +168,7 @@
   .header-title {
     margin-block-start: 173px;
     margin-block-end: 162px;
-    font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem) ;
+    font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
     margin-inline-start: -20px;
   }
 }
@@ -178,12 +177,12 @@
   .header-title {
     margin-block-start: 273px;
     margin-block-end: 114px;
-    font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem) ;
+    font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
   }
 }
 
 .title-decore {
-  background-color: var(--title-decore) ;
+  background-color: var(--title-decore);
   color: var(--title-decore-text);
 }
 
@@ -216,18 +215,11 @@
   flex-wrap: wrap;
 }
 
-.section {
-}
-
 .section_article-list {
   display: flex;
   flex-direction: column;
   gap: 20px;
 }
-
-.main-title {
-}
-
 
 .section-title {
   font-family: IBM Plex Mono, sans-serif;
@@ -235,7 +227,7 @@
   font-weight: 700;
   line-height: 23.4px;
   text-align: left;
-  color:  var( --color-main-title);
+  color: var(--color-main-title);
   font-size: 18px;
   margin-block-end: 20px;
 }
@@ -244,10 +236,7 @@
   margin-block-end: 50px;
 }
 
-.section_article-list {
-}
-
-.section_article-title { 
+.section_article-title {
   font-family: IBM Plex Mono, sans-serif;
   font-size: 18px;
   font-weight: 700;
@@ -289,12 +278,9 @@
     flex-direction: row;
   }
   .section_article-min {
-    
     flex-basis: 32%;
   }
 }
-
-
 
 .section__article-text-link {
   text-decoration: none;
@@ -350,7 +336,7 @@
   .section_div-img .section_image:nth-of-type(3) {
     grid-row: span 2;
   }
-  
+
   .title-img {
     margin-block-end: 20px;
   }
@@ -380,7 +366,7 @@
   }
 
   .footer_title {
-    font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem) ;
+    font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
   }
 }
 
@@ -390,6 +376,6 @@
   }
 
   .footerr_title {
-    font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem) ;
+    font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
   }
 }

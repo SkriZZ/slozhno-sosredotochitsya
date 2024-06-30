@@ -14,13 +14,13 @@
   --hover-color: 1px solid rgba(50, 49, 45, 0.4);
   --background-color: #fff1f7;
   --background-image: url(../images/cover-image-light.png);
-  --h1-color: #FFC2E6;
-  --text-shadow: #FF0070;
-  --link-shadow: #FF8DCB;
-  --title-decore: #FF8DCB;
+  --h1-color: #ffc2e6;
+  --text-shadow: #ff0070;
+  --link-shadow: #ff8dcb;
+  --title-decore: #ff8dcb;
   --title-decore-text: #353430;
   --color-main-title: #353430;
-  --color-text:#353430;
+  --color-text: #353430;
 }
 
 .page.theme_light .header_rec {
