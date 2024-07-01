@@ -3,7 +3,6 @@
 .page {
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
   position: relative;
-  padding: 0px 10px;
   background-color: var(--background-color);
   font-family: var(--font-family), sans-serif;
   background-image: var(--background-image);
@@ -13,22 +12,34 @@
   background-attachment: fixed;
 }
 
-@media (width >= 768px) {
-  .page {
-    padding: 0px 20px;
-  }
-}
 
 .header {
   position: relative;
   padding-block-end: 66px;
   margin-block-end: 40px;
-  block-size: 100%;
+  block-size: 100vh;
+  padding: 0px 10px;
+}
+
+.main {
+  padding: 0px 10px;
+}
+
+.footer {
+  padding: 0px 10px;
 }
 
 @media (width >= 768px) {
   .header {
     margin-block-end: 60px;
+    padding: 0px 20px;
+  }
+  .main {
+    padding: 0px 20px;
+  }
+
+  .footer {
+    padding: 0px 20px;
   }
 }
 
@@ -70,13 +81,13 @@
   height: 25px;
   border-left: 1px solid var(--corners-color);
   border-bottom: 1px solid var(--corners-color);
-  left: 0px;
+  left: 10px;
   bottom: 10px;
 }
 
 @media (width >= 768px) {
   .decorated-zone::before {
-    left: 0px;
+    left: 20px;
     bottom: 20px;
   }
 }
@@ -88,13 +99,13 @@
   height: 25px;
   border-right: 1px solid var(--corners-color);
   border-top: 1px solid var(--corners-color);
-  right: 0px;
+  right: 10px;
   top: 10px;
 }
 
 @media (width >= 768px) {
   .decorated-zone::after {
-    right: 0px;
+    right: 20px;
     top: 20px;
   }
 }
