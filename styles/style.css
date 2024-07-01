@@ -244,6 +244,10 @@
   color: var(--color-text);
 }
 
+.main {
+  padding: 0px 10px;
+}
+
 @media (width >= 768px) {
   .section {
     display: flex;
@@ -253,9 +257,9 @@
   }
 
   .main {
-    padding: 0px 10px;
     display: flex;
     flex-wrap: wrap;
+    padding: 0px 20px;
   }
 
   @media (width >= 768px) {
