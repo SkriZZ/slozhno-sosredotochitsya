@@ -14,7 +14,7 @@
   --hover-color: 1px solid rgba(50, 49, 45, 0.4);
   --background-color: #fff1f7;
   --background-image: url(../images/cover-image-light.png);
-  --h1-color: #ffc2e6;
+  --title-color: #ffc2e6;
   --text-shadow: #ff0070;
   --link-shadow: #ff8dcb;
   --title-decore: #ff8dcb;
@@ -25,4 +25,21 @@
 
 .page.theme_light .header_rec {
   display: none;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --color-rec: #fff1f7;
+    --corners-color: #353430;
+    --hover-color: 1px solid rgba(50, 49, 45, 0.4);
+    --background-color: #fff1f7;
+    --background-image: url(../images/cover-image-light.png);
+    --title-color: #ffc2e6;
+    --text-shadow: #ff0070;
+    --link-shadow: #ff8dcb;
+    --title-decore: #ff8dcb;
+    --title-decore-text: #353430;
+    --color-main-title: #353430;
+    --color-text: #353430;
+  }
 }

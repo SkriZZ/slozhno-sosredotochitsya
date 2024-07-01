@@ -14,11 +14,28 @@
   --hover-color: 1px solid rgba(255, 0, 112, 0.4);
   --background-color: #000028;
   --background-image: url(../images/cover-image-dark.png);
-  --h1-color: #db00ff;
+  --title-color: #db00ff;
   --text-shadow: #ff0070;
   --link-shadow: #ff0070;
   --title-decore: #ff0070;
   --title-decore-text: #000028;
   --color-main-title: #ff0070;
   --color-text: #f1b2ce;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-rec: #ff0070;
+    --corners-color: #ff0070;
+    --hover-color: 1px solid rgba(255, 0, 112, 0.4);
+    --background-color: #000028;
+    --background-image: url(../images/cover-image-dark.png);
+    --title-color: #db00ff;
+    --text-shadow: #ff0070;
+    --link-shadow: #ff0070;
+    --title-decore: #ff0070;
+    --title-decore-text: #000028;
+    --color-main-title: #ff0070;
+    --color-text: #f1b2ce;
+  }
 }
